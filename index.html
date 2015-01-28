@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Letters Game</title>
+  <meta name="description" content="">
+  <meta name="author" content="Pawel Szczurko">
+  
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-58263200-1', 'auto');
+      ga('send', 'pageview');
+
+  </script>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="page_wrapper">
+    
+    <h1>Letters Game!</h1>
+    <div class="rules">
+      The rules are simple, press the letter that appears on the screen to eliminate it. <br>
+      Earn <span id="gain">1 point</span> for a correct hit, lose <span id="lose">1 point</span> 
+      for an incorrect one. <br>
+      Press ESC to end game. <br>
+      Hit start when you're ready!
+    </div>
+    <div class="game_overlay">
+      <button id="start_btn">Start!</button>
+      <button id="restart_btn">Restart!</button>
+      <div class="you_lose"></div>
+      <div class="increased_speed">Increased letter creation speed!</div>
+      <div class="game_container">
+        <div id="tunnel0" class="tunnel">
+        </div>
+        <div id="tunnel1" class="tunnel"></div>
+        <div id="tunnel2" class="tunnel"></div>
+        <div id="tunnel3" class="tunnel"></div>
+      </div>
+    </div>
+    <div id="score" class="score"></div>
+    <footer>
+      Developed by <a href="http://www.pawel.pw" target="_blank">Pawe&#322; Szczurko</a>
+    </footer>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
